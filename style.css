@@ -482,9 +482,13 @@ body{
     min-height: 57px;
 }
 
+.contact_form__user_message{
+    width: 100%;
+}
+
 .contact_form__user_message textarea{
     padding: 28px 20px;
-    width: 580px;
+    width: 100%;
     min-height: 300px;
     resize: none;
 }
@@ -539,7 +543,9 @@ body{
     max-width: 580px;
 }
 
-
+.news_block__card img{
+    width: 100%;
+}
 .news_block__footer{
     margin-top: 30px;
     display: flex;
@@ -578,15 +584,15 @@ body{
 
 /* catalog block */
 .catalog_wrapper{
-    margin-top: 100px;
+    margin: 100px 10px 0 10px;
     color: #151515;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .catalog__title{
+    text-align: center;
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 50px;
@@ -613,9 +619,12 @@ body{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 100px 40px;
+    margin-left:10px;
+    margin-right:10px;
 }
 
 .car_card{
+    max-width: 270px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -625,8 +634,8 @@ body{
 }
 
 .car_card__image{
-    width: 270px;
-    height: 170px;
+    width: 100%;
+    height: auto;
 }
 
 .car_card__link{
@@ -669,6 +678,35 @@ body{
         justify-items: center;
         margin: 0 200px;
     }
+
+    .news_block{
+        flex-direction: column;
+    }
+
+    .catalog__vehicle_catalog{
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px 50px;
+    }
+
+    .why_lease, .how_it_works, .welcome {
+        margin: 50px auto;
+    }
+  
+    .how_it_works__main_text, .how_it_works__steps_wrapper{
+        padding: 25px 0;
+    }
+
+    .welcome__subtitle{
+        margin-bottom: 25px;
+    }
+    .important_things__main_text{
+        margin-bottom: 40px;
+    }
+
+    .important_things{
+        margin-bottom: 100px;
+    }
+
 }
 
 
@@ -743,5 +781,56 @@ body{
 
     .how_it_works__main_text, .how_it_works__end, .important_things__main_text{
         text-align: center;
+    }
+
+    .contact_form__subtitle{
+        text-align: center;
+    }
+
+    .catalog__vehicle_list{
+        text-align: center;
+        flex-direction: column;
+        gap: 30px;
+        }
+
+    .catalog_wrapper, .contact_form__wrapper{
+        margin-top: 30px;
+    }
+
+    .catalog__title, .catalog__vehicle_list{
+        margin-bottom: 30px;
+    }
+
+    .news_block__wrapper, .show_more_news_button{
+        margin: 50px 0;
+    }
+}
+
+@media (max-width: 630px){
+    .news_block{
+        margin: 0 20px;
+    }
+
+    .news_block__footer{
+        margin-top:10px;
+        flex-direction: column;
+        gap:10px;
+        align-items: center;
+    }
+
+
+    .contact_form__userdata_wrapper{
+        flex-direction: column;
+        gap:20px;
+    }
+
+    .contact_form__subtitle{
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+    .catalog__vehicle_catalog{
+        grid-template-columns: repeat(1,1fr);
     }
 }

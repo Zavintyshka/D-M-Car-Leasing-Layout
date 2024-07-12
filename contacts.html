@@ -3,11 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <!-- slider CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <!-- script -->
+    <script src="./app.js" defer></script>
+    <!-- css -->
     <link rel="stylesheet" href="./style.css">
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Contact Us</title>
 </head>
 <body>
     <div class="wrapper">
@@ -17,12 +28,25 @@
                     <img src="./images/main_logo.svg" alt="" class="logo__img">
                 </a>
                 <nav class="header_menu">
+                    <button class="header_menu__burger_open_button open_button_black"><i class='bx bx-menu'></i></button>
                     <ul class="menu__list">
                         <li class="menu__list_item"><a class="menu__list_link" href="./new_cars.html">New Cars</a></li>
                         <li class="menu__list_item"><a class="menu__list_link" href="#">Pre-Owned Cars</a></li>
                         <li class="menu__list_item"><a class="menu__list_link" href="#">Finance</a></li>
                         <li class="menu__list_item"><a class="menu__list_link" href="#">Lease by Price</a></li>
-                        <li class="menu__list_item"><a class="menu__list_link" href="./contacts.html">Contact Us</a></li>
+                        <li class="menu__list_item"><a class="menu__list_link" href="/contacts.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header_container__burger_menu">
+                <button class="header_menu__burger_close_button"><i class='bx bx-x'></i></button>
+                <nav class="burger_menu__nav">
+                    <ul class="burger_menu__list">
+                        <li class="menu__list_item"><a class="menu__list_link" href="./new_cars.html">New Cars</a></li>
+                        <li class="menu__list_item"><a class="menu__list_link" href="#">Pre-Owned Cars</a></li>
+                        <li class="menu__list_item"><a class="menu__list_link" href="#">Finance</a></li>
+                        <li class="menu__list_item"><a class="menu__list_link" href="#">Lease by Price</a></li>
+                        <li class="menu__list_item"><a class="menu__list_link" href="/contacts.html">Contact Us</a></li>
                     </ul>
                 </nav>
             </div>
